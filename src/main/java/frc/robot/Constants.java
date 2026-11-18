@@ -7,9 +7,9 @@ public final class Constants {
   public static final double DRIVE_LIMIT = 0.25; // 第一课只展示低输出
   public static final double LOOP_SECONDS = 0.02;
   // 默认禁止实车启动。核对实车 CAN ID、方向、限流并完成架空测试后再显式放行。
-  public static final boolean ALLOW_REAL_HARDWARE = false;
-  public static final int LEFT_LEADER = 3, LEFT_FOLLOWER = 2;
-  public static final int RIGHT_LEADER = 1, RIGHT_FOLLOWER = 0;
+  public static final boolean ALLOW_REAL_HARDWARE = true;
+  public static final int LEFT_LEADER = 0, LEFT_FOLLOWER = 2;
+  public static final int RIGHT_LEADER = 6, RIGHT_FOLLOWER = 0;
   public static final int INTAKE_ID = 4, SHOOTER_ID = 7;
   public static final double STATOR_LIMIT_AMPS = 30.0; // 教学起始值，需按机构评审
 }

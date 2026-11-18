@@ -10,8 +10,8 @@ public class DriveIOReal implements DriveIO {
   private double leftRequest, rightRequest;
   public DriveIOReal() {
     // 左右镜像装配的常见配置，必须架空逐侧验证；具体车不一定适用。
-    configure(left, false);
-    configure(right, true);
+    configure(left, true);
+    configure(right, false);
   }
   private static void configure(TalonFX motor, boolean inverted) {
     var config = new TalonFXConfiguration();

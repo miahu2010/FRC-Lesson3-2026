@@ -14,7 +14,7 @@ public class RobotContainer {
  public RobotContainer(){
   if(RobotBase.isReal()&&!Constants.ALLOW_REAL_HARDWARE) throw new IllegalStateException("实车硬件尚未放行");
   drive=new DriveSubsystem(RobotBase.isReal()?new DriveIOReal():new DriveIOSim());
-  // Teleop: hold left bumper, left stick Y drives and right stick X turns.
+  // Teleop, left stick Y drives and right stick X turns.
   drive.setDefaultCommand(drive.runEnd(()->{
    if(DriverStation.isTeleopEnabled() && driver.isConnected() && driver.getLeftBumperButton()){
     double forward=MathUtil.applyDeadband(-driver.getLeftY(),Constants.DEADBAND);
